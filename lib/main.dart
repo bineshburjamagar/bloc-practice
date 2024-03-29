@@ -1,4 +1,5 @@
 import 'package:counter_app/bloc/favourite_app/favorite_app_bloc.dart';
+import 'package:counter_app/bloc/post_bloc/post_bloc.dart';
 import 'package:counter_app/repository/favorite_repository.dart';
 import 'package:counter_app/ui/post_page.dart';
 import 'package:flutter/material.dart';
@@ -23,9 +24,11 @@ class MainApp extends StatelessWidget {
           BlocProvider(
             create: (context) => FavoriteAppBloc(FavoriteRepository()),
           ),
+          BlocProvider(create: (context) => PostBloc())
         ],
-        child: const MaterialApp(
-          home: PostPage(),
+        child: MaterialApp(
+          theme: ThemeData.dark(),
+          home: const PostPage(),
         ));
   }
 }
