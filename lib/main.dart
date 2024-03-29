@@ -1,3 +1,5 @@
+import 'package:counter_app/bloc/favourite_app/favorite_app_bloc.dart';
+import 'package:counter_app/repository/favorite_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,6 +19,9 @@ class MainApp extends StatelessWidget {
         providers: [
           BlocProvider(create: (context) => CounterBloc()),
           BlocProvider(create: (context) => SwitchBloc()),
+          BlocProvider(
+            create: (context) => FavoriteAppBloc(FavoriteRepository()),
+          ),
         ],
         child: const MaterialApp(
           home: Text('data'),
