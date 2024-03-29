@@ -1,4 +1,4 @@
-import 'package:counter_app/bloc/model/favorite_item_model.dart';
+import 'package:counter_app/model/favorite_item_model.dart';
 
 class FavoriteRepository {
   Future<List<FavoriteItemModel>> fetchItem() async {

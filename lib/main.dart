@@ -1,11 +1,11 @@
 import 'package:counter_app/bloc/favourite_app/favorite_app_bloc.dart';
 import 'package:counter_app/repository/favorite_repository.dart';
+import 'package:counter_app/ui/post_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'bloc/counter_bloc/counter_bloc.dart';
 import 'bloc/switch_bloc/switch_bloc.dart';
-import 'ui/favorite_app.dart';
 
 void main() {
   runApp(const MainApp());
@@ -25,7 +25,7 @@ class MainApp extends StatelessWidget {
           ),
         ],
         child: const MaterialApp(
-          home: FavoriteApp(),
+          home: PostPage(),
         ));
   }
 }

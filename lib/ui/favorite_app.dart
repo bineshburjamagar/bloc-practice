@@ -1,5 +1,5 @@
 import 'package:counter_app/bloc/favourite_app/favorite_app_bloc.dart';
-import 'package:counter_app/bloc/model/favorite_item_model.dart';
+import 'package:counter_app/model/favorite_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

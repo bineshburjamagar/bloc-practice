@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:counter_app/bloc/model/favorite_item_model.dart';
+import 'package:counter_app/model/favorite_item_model.dart';
 import 'package:counter_app/repository/favorite_repository.dart';
 import 'package:equatable/equatable.dart';
 
