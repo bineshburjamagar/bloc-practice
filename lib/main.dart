@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'bloc/counter_bloc/counter_bloc.dart';
 import 'bloc/switch_bloc/switch_bloc.dart';
+import 'ui/favorite_app.dart';
 
 void main() {
   runApp(const MainApp());
@@ -24,7 +25,7 @@ class MainApp extends StatelessWidget {
           ),
         ],
         child: const MaterialApp(
-          home: Text('data'),
+          home: FavoriteApp(),
         ));
   }
 }
