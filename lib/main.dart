@@ -1,4 +1,3 @@
-import 'package:counter_app/ui/image_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,11 +14,12 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (context) => CounterBloc()),
-        BlocProvider(create: (context) => SwitchBloc()),
-      ],
-      child: const ImagePickerPage(),
-    );
+        providers: [
+          BlocProvider(create: (context) => CounterBloc()),
+          BlocProvider(create: (context) => SwitchBloc()),
+        ],
+        child: const MaterialApp(
+          home: Text('data'),
+        ));
   }
 }
